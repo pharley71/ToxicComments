@@ -1,0 +1,41 @@
+loading data ...
+tokenizing ... 
+padding ...
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+input_1 (InputLayer)         (None, 200)               0         
+_________________________________________________________________
+embedding_1 (Embedding)      (None, 200, 128)          2560000   
+_________________________________________________________________
+lstm_layer (LSTM)            (None, 200, 60)           45360     
+_________________________________________________________________
+global_max_pooling1d_1 (Glob (None, 60)                0         
+_________________________________________________________________
+dropout_1 (Dropout)          (None, 60)                0         
+_________________________________________________________________
+dense_1 (Dense)              (None, 10)                610       
+_________________________________________________________________
+dropout_2 (Dropout)          (None, 10)                0         
+_________________________________________________________________
+dense_2 (Dense)              (None, 1)                 11        
+=================================================================
+Total params: 2,605,981
+Trainable params: 2,605,981
+Non-trainable params: 0
+_________________________________________________________________
+Train on 129251 samples, validate on 14362 samples
+Epoch 1/2
+Epoch 00001: val_loss improved from inf to 0.10029, saving model to weights_base.best.hdf5
+ - 594s - loss: 0.1487 - acc: 0.9496 - val_loss: 0.1003 - val_acc: 0.9613
+Epoch 2/2
+Epoch 00002: val_loss did not improve
+ - 594s - loss: 0.0903 - acc: 0.9665 - val_loss: 0.1052 - val_acc: 0.9609
+Number of positives:  1162
+Accuracy score:  0.9639052512846221
+Precision score:  0.8889845094664371
+Recall score:  0.697972972972973
+F1 score:  0.7819833459500378
+Confusion Matrix: 
+[[14349   129]
+ [  447  1033]]
