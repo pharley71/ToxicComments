@@ -1,5 +1,5 @@
 ---------------------------------------------
-This here folder contains the following: 
+This here folder rycha contains the following: 
 ---------------------------------------------
 project.pdf : the main project file 
 proposal.pdf : proposal file*
