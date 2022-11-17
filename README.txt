@@ -1,5 +1,5 @@
 ---------------------------------------------
-This folder contains the following: 
+This here folder contains the following: 
 ---------------------------------------------
 project.pdf : the main project file 
 proposal.pdf : proposal file*
